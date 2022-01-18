@@ -5,11 +5,11 @@ using UnityEngine;
 public class Mover : MonoBehaviour
 {
 
-   [SerializeField]  float xvalue = 0;
-[SerializeField] float yvalue = 0.02f;
- [SerializeField]  float zvalue = 0;
+//these variables change our movement speed
 
 
+
+  float moveSpeed = 10f; //this is the speed we move the block 
 
   // Start is called before the first frame update
   //Method
@@ -22,7 +22,11 @@ public class Mover : MonoBehaviour
   // runs throughout your game
   void Update()
   {
-    transform.Translate(xvalue, yvalue, zvalue);
+    float xvalue = Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed ; // this variable deals with moving our player left or right
+
+    float zvalue = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed ; //this variable deals with moving our player up and down (on the z axsis)
+
+    transform.Translate(xvalue, 0, zvalue);
 
   }
 }
