@@ -40,7 +40,7 @@ void PrintInstructions(){
   
   Debug.Log("Welcome to the game");
   Debug.Log("Move player with WASD or arrow keys"); //printing out a message
-  Debug.Debug.Log("Don't hit the walls");
+  Debug.Log("Don't hit the walls");
 }
 
 
