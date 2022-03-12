@@ -183,7 +183,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 568585088}
   m_LocalRotation: {x: 0.25591683, y: -0.01857041, z: 0.052400824, w: 0.9650989}
-  m_LocalPosition: {x: -0.16768683, y: 5.101003, z: -7.1045423}
+  m_LocalPosition: {x: -0.4435346, y: 5.0755677, z: -7.121936}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1265054862}
@@ -204,6 +204,7 @@ GameObject:
   - component: {fileID: 646879220}
   - component: {fileID: 646879219}
   - component: {fileID: 646879224}
+  - component: {fileID: 646879225}
   m_Layer: 0
   m_Name: Dropper
   m_TagString: Untagged
@@ -244,7 +245,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 646879218}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -311,11 +312,23 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &646879225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 646879218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42b89830bf6c8440d98da5d0ccb1b9a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,7 +500,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.25591683, y: -0.01857041, z: 0.052400824, w: 0.9650989}
-  m_LocalPosition: {x: -0.16768683, y: 5.101003, z: -7.1045423}
+  m_LocalPosition: {x: -0.4435346, y: 5.0755677, z: -7.121936}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -760,7 +773,7 @@ GameObject:
   - component: {fileID: 1089323196}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
